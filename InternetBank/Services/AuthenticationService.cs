@@ -10,7 +10,7 @@ namespace InternetBank.Services
 {
     public class AuthenticationService
     {
-        private readonly AppDbContext _dbContext = new();
+        private readonly AppDbContext _dbContext;
         private readonly IHttpContextAccessor _accessor;
         public AuthenticationService(AppDbContext dbContext, IHttpContextAccessor accessor)
         {
@@ -23,7 +23,7 @@ namespace InternetBank.Services
             User user = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == email && user.Password == password);
             if (user != null)
             {
-                CookieAuthentication(user.Name, user.Email);
+                CookieAuthentication(user.Name, user.Id);
                 return (true, "");
             }
             return (false, "Ошибка авторизации!!!");
@@ -42,16 +42,16 @@ namespace InternetBank.Services
             }
             _dbContext.Users.Add(new User() { Name = name, Email = email, Password = password });
             await _dbContext.SaveChangesAsync();
-            CookieAuthentication(name, email);
+            await UserLoginAsync(email, password);
             return (true, "");
         }
 
-        private async void CookieAuthentication(string name, string email)
+        private async void CookieAuthentication(string name, int id)
         {
             var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, name),
-                    new Claim(ClaimTypes.Email, email)
+                    new Claim("Id", id.ToString())
                 };
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var authProperties = new AuthenticationProperties { };
