@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css",
+      "PackagePath": "staticwebassets\\InternetBank.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\wwwroot\\CSS\\main.css",
+      "PackagePath": "staticwebassets\\CSS\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.InternetBank.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.InternetBank.props",
+      "PackagePath": "build\\InternetBank.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.InternetBank.props",
+      "PackagePath": "buildMultiTargeting\\InternetBank.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.InternetBank.props",
+      "PackagePath": "buildTransitive\\InternetBank.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

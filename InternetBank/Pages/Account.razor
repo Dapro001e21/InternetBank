@@ -1,0 +1,55 @@
+﻿@page "/Account"
+@using System.Security.Claims
+@using InternetBank.Models
+@using InternetBank.Services
+@inject CardsService cardService
+@inject NavigationManager nav
+
+<h1>Account</h1>
+
+<AuthorizeView>
+    <Authorized>
+        <p>Hello, @Name</p>
+    </Authorized>
+</AuthorizeView>
+
+<button @onclick="async () => await CardCreate()">new card</button> 
+
+<h2>Ваши карты:</h2>
+@{
+	foreach (var e in allCards)
+	{
+		<div @onclick="@(() => LoadCardPage(@e.Id))" style="border-radius: 10px; height: 100px; width: 200px; background-color: lightblue; margin: 5px; padding:10px">
+			<h5>Id:@e.Id</h5>
+			<div style="font-size: large; text-align: center">@e.Money rub.</div>
+		</div>
+	}
+}
+@code {
+	[CascadingParameter] Task<AuthenticationState> auth { get; set; }
+	Card newCard = new Card();
+	private List<Card> allCards = new();
+	public string Name { get; set; }
+	public string Email { get; set; }
+	protected override async Task OnInitializedAsync()
+	{
+		var authState = await auth;
+		Name = authState.User.Claims.SingleOrDefault(claim => claim.Type == ClaimTypes.Name)?.Value.ToString();
+		Email = authState.User.Claims.SingleOrDefault(claim => claim.Type == ClaimTypes.Email)?.Value.ToString();
+		allCards = await cardService.GetCards(Email);
+	}
+	public void test(){
+		Console.WriteLine("test");
+	}
+	public void LoadCardPage(int id)
+	{
+		nav.NavigateTo($"card/{id}");
+	}
+	private async Task CardCreate()
+	{
+		newCard = new Card() { Money = 0, OwnerEmail = Email };
+		if (await cardService.AddCard(newCard))
+			allCards = await cardService.GetCards(Email);
+	}
+
+}

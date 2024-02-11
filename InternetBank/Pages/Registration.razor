@@ -1,0 +1,59 @@
+﻿@page "/registration"
+@using InternetBank.Services
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Forms
+@using System.ComponentModel.DataAnnotations;
+@inject AuthenticationService authService;
+@inject NavigationManager navManager;
+
+<div class="center-block">
+    <EditForm class="form" Model="@model" OnValidSubmit="async () => await Submit()">
+        <DataAnnotationsValidator />
+        <h1>Регистрация</h1>
+        <div>
+            <input placeholder="Введите имя..." @bind-value="model.Name" />
+            <ValidationMessage For="@(() => model.Name)" />
+        </div>
+        <div>
+            <input placeholder="Введите почту..." @bind-value="model.Email" />
+            <ValidationMessage For="@(() => model.Email)" />
+        </div>
+        <div>
+            <input type="password" placeholder="Введите пароль..." @bind-value="model.Password" />
+            <ValidationMessage For="@(() => model.Password)" />
+        </div>
+        <div>
+            <input type="password" placeholder="Повторите пароль..." @bind-value="model.RepeatPassword" />
+            <ValidationMessage For="@(() => model.RepeatPassword)" />
+        </div>
+        <div class="validation-message">@ErrorMessage</div>
+        <button type="submit">Submit</button>
+        <br />
+        <a href="/">Авторизироваться</a>
+    </EditForm>
+</div>
+
+@code {
+    Model model = new Model();
+    class Model
+    {
+        [Required(ErrorMessage = "Поле имя является обязательным.")]
+        public string Name { get; set; }
+        [Required(ErrorMessage = "Поле электронная почта является обязательным."), EmailAddress(ErrorMessage = "Введите корректный адрес почты.")]
+        public string Email { get; set; }
+        [Required(ErrorMessage = "Поле пароль является обязательным.")]
+        public string Password { get; set; }
+        [Required(ErrorMessage = "Повторите пароль.")]
+        public string RepeatPassword { get; set; }
+    }
+    public string ErrorMessage { get; set; }
+    async Task Submit()
+    {
+        if (model.Password != model.RepeatPassword)
+        {
+            ErrorMessage = "Пароли не совпадают.";
+            return;
+        }
+        //ErrorMessage = authService.Reg(model.Name, model.Email, model.Password, navManager);
+    }
+}

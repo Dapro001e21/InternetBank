@@ -1,0 +1,34 @@
+﻿@page "/Registration"
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model RegistrationModel
+
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<link href="/CSS/main.css" rel="stylesheet" type="text/css">
+<div class="center-block">
+    <form class="form" method="post">
+        <h1>Регистрация</h1>
+        <div>
+            <input asp-for="model.Name" placeholder="Введите имя..." /><br />
+            <span class="validation-message" asp-validation-for="model.Name"></span>
+        </div>
+        <div>
+            <input asp-for="model.Email" type="email" placeholder="Введите почту..." /><br />
+            <span class="validation-message" asp-validation-for="model.Email"></span>
+        </div>
+        <div>
+            <input asp-for="model.Password" type="password" placeholder="Введите пароль..." /><br />
+            <span class="validation-message" asp-validation-for="model.Password"></span>
+        </div>
+        <div>
+            <input asp-for="model.RepeatPassword" type="password" placeholder="Повторите пароль..." /><br />
+            <span class="validation-message" asp-validation-for="model.RepeatPassword"></span>
+        </div>
+        <button>Зарегестрироваться</button>
+        <br />
+        <p class="validation-message">@Model.ErrorMessage</p>
+        <a href="/Login">Авторизироваться</a>
+    </form>
+</div>

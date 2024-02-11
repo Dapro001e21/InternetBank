@@ -1,0 +1,27 @@
+﻿@page "/Login"
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<link href="/CSS/main.css" rel="stylesheet" type="text/css">
+<div class="center-block">
+    <form class="form" method="post">
+        <h1>Авторизация</h1>
+        <div>
+            <input asp-for="model.Email" placeholder="Введите почту..." /><br/>
+            <span class="validation-message" asp-validation-for="model.Email"></span>
+        </div>
+        <div>
+            <input asp-for="model.Password" type="password" placeholder="Введите пароль..." /><br/>
+            <span class="validation-message" asp-validation-for="model.Password"></span>
+        </div>
+        <button>Войти</button>
+        <br />
+        <p class="validation-message">@Model.ErrorMessage</p>
+        <a href="/Registration">Зарегестрироваться</a>
+    </form>
+</div>
+

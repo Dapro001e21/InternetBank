@@ -1,0 +1,97 @@
+﻿@page "/card/{id:int}"
+@using InternetBank.Models
+@using System.Security.Claims
+@using InternetBank.Services
+@inject CardsService cardService
+@inject MoneyTransactionsService tranService
+@inject NavigationManager nav
+
+<h3>Card</h3>
+<h2>@thisCard.Money</h2>
+<div style="display:flex;justify-content:left">
+	<div style="min-width:fit-content;padding:50px">
+		Reciever email: <input type="text" @bind="@Email" />
+		<button @onclick="async () => await GetCardsList()">Enter</button>
+		<p>@Message</p>
+		@foreach (var c in cards)
+		{
+			<div class="cardList" @onclick="() => SetCardId(c.Id)">карта: @c.Id</div>
+		}
+		<br />
+		<EditForm Model="@tran" OnValidSubmit="async () => await SendMoney()">
+			Card id:<InputNumber readonly @bind-Value="@tran.RecieverIdCard"></InputNumber><br /><br />
+			Money:<InputNumber @bind-Value="@tran.Money"></InputNumber>
+			<button type="submit">Send</button>
+		</EditForm>
+	</div>
+	<div style="padding:20px;min-width:fit-content">
+		<h4>Transaction history</h4>
+		@foreach (var t in transactions)
+		{
+			if (t.RecieverIdCard == Id)
+			{
+				<div style="margin:10px"><span>@t.TransactionTime</span><span style="margin-left:20px;color:lawngreen">    + @t.Money</span></div>
+			}
+			else
+			{
+				<div style="margin:10px"><span>@t.TransactionTime</span><span style="margin-left:20px;color:red">    - @t.Money</span></div>
+			}
+		}
+	</div>
+</div>
+
+
+
+@code {
+	[Parameter]
+	public int Id{ get; set; }
+	[CascadingParameter] Task<AuthenticationState> auth { get; set; }
+
+	public MoneyTransaction tran=new();
+	List<MoneyTransaction> transactions = new();
+	List<Card> cards = new();
+	Card thisCard = new Card();
+	string Message = "";
+	string Email;
+
+	protected override async Task OnInitializedAsync()
+	{
+		thisCard = await cardService.GetCard(Id);
+		transactions = await tranService.GetTransactionHistory(Id);
+		StateHasChanged();
+	}
+	private async Task GetCardsList()
+	{
+		Message = "";
+		if (Email != "" && Email.Contains("@"))
+		{
+			cards = await cardService.GetCards(Email);
+			if (cards == null)
+				cards = new List<Card>();
+			if (cards.Count == 0)
+			{
+				Message = "У этого пользователя нет карт";
+			}
+			StateHasChanged();
+		}
+		else
+		{
+			Message = "Некорректный email";
+		}
+	}
+	public void SetCardId(int id)
+	{
+		tran.RecieverIdCard = id;
+	}
+	private async Task SendMoney()
+	{
+		if(tran.Money > 0)
+		{
+			tran.SenderIdCard = Id;
+			tran.TransactionTime = DateTime.Now;
+			await tranService.AddMoneyTransaction(tran);
+			transactions = await tranService.GetTransactionHistory(Id);
+			//nav.NavigateTo("/Account");
+		}		
+	}
+}
