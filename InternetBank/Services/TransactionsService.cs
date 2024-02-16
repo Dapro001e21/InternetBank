@@ -12,6 +12,8 @@ namespace InternetBank.Services
 			_dbContext = dbContext;
 		}
 
+
+
 		public async Task<(bool Success, string Message)> AddMoneyTransaction(Transaction transaction)
 		{
 			if (transaction.SenderIdCard == transaction.RecieverIdCard)

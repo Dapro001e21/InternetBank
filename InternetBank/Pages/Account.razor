@@ -7,20 +7,25 @@
 
 <PageTitle>Аккаунт</PageTitle>
 
-<h1>Account</h1>
 <AuthorizeView>
     <Authorized>
-        <p>Hello, @Name</p>
-
-		<button @onclick="async () => await CardCreate()">new card</button>
+        <h1>Здраствуйте, @Name</h1>
+		<button @onclick="async () => await CardCreate()">Выпустить новую карту</button>
 		<h2>Ваши карты:</h2>
 		@{
-			foreach (var e in allCards)
+			if(allCards.Count > 0)
 			{
-				<div @onclick="@(() => LoadCardPage(@e.Id))" style="border-radius: 10px; height: 100px; width: 200px; background-color: lightblue; margin: 5px; padding:10px">
-					<h5>Id:@e.Id</h5>
-					<div style="font-size: large; text-align: center">@e.Money rub.</div>
-				</div>
+				foreach (var e in allCards)
+				{
+					<div @onclick="@(() => LoadCardPage(@e.Id))" style="border-radius: 10px; height: 100px; width: 200px; background-color: lightblue; margin: 5px; padding:10px">
+						<h5>Id:@e.Id</h5>
+						<div style="font-size: large; text-align: center">@e.Money rub.</div>
+					</div>
+				}
+			}
+			else
+			{
+				<h3>Загрузка...</h3>
 			}
 		}
     </Authorized>

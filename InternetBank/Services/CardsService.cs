@@ -17,6 +17,12 @@ namespace InternetBank.Services
             return cards;
         }
 
+		public async Task<List<Card>> GetCards(string email)
+		{
+			List<Card> cards = await _dbContext.Cards.Where(card => card.OwnerId == _dbContext.Users.FirstOrDefault(user => user.Email == email).Id).ToListAsync();
+			return cards;
+		}
+
 		public async Task<Card> GetCard(int id)
 		{
 			Card card = await _dbContext.Cards.SingleOrDefaultAsync(card => card.Id == id);
