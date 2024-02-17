@@ -15,7 +15,7 @@ builder.Services.AddScoped<CardsService>();
 builder.Services.AddTransient<TransactionsService>();
 builder.Services.AddOptions<SmtpConfig>().BindConfiguration("SmtpConfig");
 builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.AddTransient<CodeGeneratingService>();
+builder.Services.AddScoped<CodeGeneratingService>();
 builder.Services.AddScoped<TransactionsService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddHttpContextAccessor();
@@ -25,6 +25,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.ExpireTimeSpan = TimeSpan.FromDays(3);
 });
 builder.Services.AddScoped<HttpClient>();
+builder.Services.AddSession(s => s.IdleTimeout = TimeSpan.FromMinutes(15));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -47,4 +48,5 @@ app.MapControllers();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
+app.UseSession();
 app.Run();
