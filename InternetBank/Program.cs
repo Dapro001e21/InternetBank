@@ -12,10 +12,11 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<AuthenticationService>();
 builder.Services.AddScoped<CardsService>();
-builder.Services.AddTransient<MoneyTransactionsService>();
+builder.Services.AddTransient<TransactionsService>();
 builder.Services.AddOptions<SmtpConfig>().BindConfiguration("SmtpConfig");
 builder.Services.AddScoped<ISender, EmailService>();
 builder.Services.AddTransient<CodeGeneratingService>();
+builder.Services.AddScoped<TransactionsService>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 .AddCookie(options =>

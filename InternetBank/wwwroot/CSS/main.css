@@ -66,3 +66,30 @@ main{
 .cardList:hover{
     background-color:lightblue;
 }
+
+.cardPage {
+    display: flex;
+    justify-content: left;
+}
+
+.cardPage fieldset {
+    height: max-content;
+}
+
+.cardPage .content {
+    min-width: fit-content;
+    padding: 50px;
+}
+
+.cardPage .content .formblock {
+    margin: 10px 0;
+}
+
+.cardPage .transictions {
+    padding: 20px;
+    min-width: fit-content;
+}
+
+.cardPage .transictions .block {
+    margin:10px;
+}

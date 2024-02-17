@@ -10,17 +10,25 @@ namespace InternetBank.Services
         {
             _dbContext = dbContext;
         }
-        public async Task<List<Card>> GetCards(string Email)
+
+        public async Task<List<Card>> GetCards(int id)
         {
-            List<Card> cards = await _dbContext.Cards.Where(card => card.OwnerEmail == Email).ToListAsync();
+            List<Card> cards = await _dbContext.Cards.Where(card => card.OwnerId == id).ToListAsync();
             return cards;
         }
+
+		public async Task<List<Card>> GetCards(string email)
+		{
+			List<Card> cards = await _dbContext.Cards.Where(card => card.OwnerId == _dbContext.Users.FirstOrDefault(user => user.Email == email).Id).ToListAsync();
+			return cards;
+		}
+
 		public async Task<Card> GetCard(int id)
 		{
 			Card card = await _dbContext.Cards.SingleOrDefaultAsync(card => card.Id == id);
-            var t = "";
 			return card;
 		}
+
 		public async Task<bool> AddCard(Card card)
         {
             try

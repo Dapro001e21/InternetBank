@@ -13,7 +13,6 @@ namespace InternetBank.Areas.Identity.Pages.Account
         ISender _emailService;
         CodeGeneratingService _codeService;
         ProtectedSessionStorage _store;
-        private static User user;
         private int _code;
         public string Email { get; set; }
         public int CodeForCompare { get; set; }
@@ -33,7 +32,6 @@ namespace InternetBank.Areas.Identity.Pages.Account
         {
             var result = await _authService.EmailIsExist(email);
             CodeGeneratingService.User = await _authService.GetUserByEmailAsync(email);
-            code_form
             ErrorMessage = result.Message;
         }
 

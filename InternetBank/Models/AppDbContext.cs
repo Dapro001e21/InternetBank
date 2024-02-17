@@ -8,7 +8,7 @@ namespace InternetBank.Models
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Card> Cards { get; set; }
-		public DbSet<MoneyTransaction> MoneyTransactions { get; set; }
+		public DbSet<Transaction> Transactions { get; set; }
 		public AppDbContext() { }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
     }
