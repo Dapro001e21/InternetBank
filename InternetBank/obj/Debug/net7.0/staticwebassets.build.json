@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u2ufhILJit/oYvDJy9uDxMHo5uf8377f0gwCPNc1p+g=",
+  "Hash": "JRyQUpeb6Y74t8tv6dCNv+n5C7BIrYh1PymoFeZ/wzI=",
   "Source": "InternetBank",
   "BasePath": "_content/InternetBank",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "InternetBank\\wwwroot",
       "Source": "InternetBank",
-      "ContentRoot": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\wwwroot\\",
       "BasePath": "_content/InternetBank",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InternetBank.styles.css",
+      "Identity": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InternetBank.styles.css",
       "SourceId": "InternetBank",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/InternetBank",
       "RelativePath": "InternetBank.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InternetBank.styles.css"
+      "OriginalItemSpec": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InternetBank.styles.css"
     },
     {
-      "Identity": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css",
+      "Identity": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css",
       "SourceId": "InternetBank",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/InternetBank",
       "RelativePath": "InternetBank.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\wwwroot\\CSS\\main.css",
+      "Identity": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\wwwroot\\CSS\\main.css",
       "SourceId": "InternetBank",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\wwwroot\\",
       "BasePath": "_content/InternetBank",
       "RelativePath": "CSS/main.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\CSS\\main.css"
     },
     {
-      "Identity": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\wwwroot\\favicon.png",
       "SourceId": "InternetBank",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\wwwroot\\",
       "BasePath": "_content/InternetBank",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

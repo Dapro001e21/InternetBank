@@ -9,75 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InternetBank
 build_property.RootNamespace = InternetBank
-build_property.ProjectDir = D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\
+build_property.ProjectDir = C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank
+build_property.MSBuildProjectDirectory = C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/App.razor]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Pages/Account.razor]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Pages/Account.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Pages/CardPage.razor]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Pages/CardPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Pages/Index.razor]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/_Imports.razor]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Shared/MainLayout.razor]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-n8qsp3wuiu
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Shared/NavMenu.razor]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qq6wwtiej9
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/Account/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Account/Registration.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/Account/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Shared/_Layout.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Pages/Error.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Pages/_Host.cshtml]
+[C:/Users/larik/source/repos/IntBank2/InternetBank/InternetBank/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
