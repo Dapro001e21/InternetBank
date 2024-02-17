@@ -29,6 +29,41 @@ namespace InternetBank.Services
             return (false, "Ошибка авторизации!!!");
         }
 
+        public async Task<(bool Success, string Message)> ChangePasswordAsync(User user, string newPassword)
+        {
+            try
+            {
+                User temp = await _dbContext.Users.SingleOrDefaultAsync(u => u.Id == user.Id);
+                if(temp != null)
+                {
+                    temp.Password = newPassword;
+                    await _dbContext.SaveChangesAsync();
+                }
+                return (true, "");
+            }
+            catch (Exception)
+            {
+                return (false, "");
+            }
+        }
+        public async Task<(bool Success, string Message, int Id)> EmailIsExist(string email)
+        {
+            User user = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == email);
+            if (user != null)
+            {
+                return (true, "", user.Id);
+            }
+            return (false, "Такого Email не существует!", -1);
+        }
+        public async Task<User> GetUserByIdAsync(int id)
+        {
+            return await _dbContext.Users.SingleOrDefaultAsync(u => u.Id == id);
+        }
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            return await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == email);
+        }
+
         public async Task<(bool Success, string Message)> UserRegistrationAsync(string name, string email, string password, string repeatPassword)
         {
             if(password != repeatPassword)

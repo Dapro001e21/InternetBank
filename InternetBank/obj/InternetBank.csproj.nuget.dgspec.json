@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\InternetBank.csproj": {}
+    "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\InternetBank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\InternetBank.csproj": {
+    "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\InternetBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\InternetBank.csproj",
+        "projectUniqueName": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\InternetBank.csproj",
         "projectName": "InternetBank",
-        "projectPath": "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\InternetBank.csproj",
+        "projectPath": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\InternetBank.csproj",
         "packagesPath": "C:\\Users\\larik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\larik\\source\\repos\\IntBank\\InternetBank\\InternetBank\\obj\\",
+        "outputPath": "C:\\Users\\larik\\source\\repos\\IntBank2\\InternetBank\\InternetBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.15, )"
