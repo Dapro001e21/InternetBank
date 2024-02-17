@@ -11,8 +11,8 @@
 
 <h1>Номер карты: @thisCard.Id</h1>
 <h2>Баланс: @thisCard.Money</h2>
-<div style="display:flex;justify-content:left">
-	<fieldset style="height: max-content">
+<div class="cardPage">
+	<fieldset>
 		<legend>Перевод по:</legend>
 		<InputRadioGroup @bind-Value="IsEmail">
 			<div>
@@ -25,19 +25,19 @@
 			</div>
 		</InputRadioGroup>
 	</fieldset>
-	<div style="min-width:fit-content;padding:50px">
+	<div class="content">
 		@{
 			if (IsEmail)
 			{
 				<EditForm Model="@DataModel" OnValidSubmit="SendMoney">
 					<DataAnnotationsValidator />
-					<div style="margin: 10px 0">
+					<div class="form-block">
 						<span>Введите почту:</span>
 						<InputText @bind-Value="DataModel.ReceiverEmail" />
 						<button type="button" @onclick="GetCardsReceiver">Показать карты</button>
 						<ValidationMessage style="margin-bottom: 10px" For="@(() => DataModel.ReceiverEmail)" />
 					</div>
-					<div style="margin: 10px 0">
+					<div class="form-block">
 						@{
 							if (DataModel.ReceiverCards.Count > 0)
 							{
@@ -51,7 +51,7 @@
 							}
 						}
 					</div>
-					<div style="margin: 10px 0">
+					<div class="form-block">
 						<span>Сумма:</span>
 						<InputNumber @bind-Value="transaction.Money"></InputNumber>
 						<button type="submit">Перевести</button>
@@ -62,11 +62,11 @@
 			else
 			{
 				<EditForm Model="@DataModel" OnSubmit="SendMoney">
-					<div style="margin: 10px 0">
+					<div class="form-block">
 						<span>Номер карты:</span>
 						<InputNumber @bind-Value="DataModel.RecieverIdCard"></InputNumber>
 					</div>
-					<div style="margin: 10px 0">
+					<div class="form-block">
 						<span>Сумма:</span>
 						<InputNumber @bind-Value="transaction.Money"></InputNumber>
 						<button type="submit">Перевести</button>
@@ -82,11 +82,11 @@
 		{
 			if (trans.RecieverIdCard == CardId)
 			{
-				<div style="margin:10px"><span>@trans.TransactionTime</span><span style="margin-left:20px;color:lawngreen">    + @trans.Money</span></div>
+				<div class="block"><span>@trans.TransactionTime</span><span style="margin-left:20px;color:lawngreen">    + @trans.Money</span></div>
 			}
 			else
 			{
-				<div style="margin:10px"><span>@trans.TransactionTime</span><span style="margin-left:20px;color:red">    - @trans.Money</span></div>
+				<div class="block"><span>@trans.TransactionTime</span><span style="margin-left:20px;color:red">    - @trans.Money</span></div>
 			}
 		}
 	</div>
