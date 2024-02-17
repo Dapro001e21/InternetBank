@@ -12,12 +12,10 @@ namespace InternetBank.Services
 			_dbContext = dbContext;
 		}
 
-
-
 		public async Task<(bool Success, string Message)> AddMoneyTransaction(Transaction transaction)
 		{
 			if (transaction.SenderIdCard == transaction.RecieverIdCard)
-				return (false, "Счет отправителя и получателя совпадают. Укажите другой счет!!!");
+				return (false, "Счет отправителя и получателя совпадают. Укажите другой счет!");
 			using (var transation = await _dbContext.Database.BeginTransactionAsync())
 			{
 				try

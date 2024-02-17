@@ -26,19 +26,19 @@ namespace InternetBank.Services
                 CookieAuthentication(user.Name, user.Id);
                 return (true, "");
             }
-            return (false, "Ошибка авторизации!!!");
+            return (false, "Ошибка авторизации!");
         }
 
         public async Task<(bool Success, string Message)> UserRegistrationAsync(string name, string email, string password, string repeatPassword)
         {
             if(password != repeatPassword)
             {
-                return (false, "Пароли не совпадают!!!");
+                return (false, "Пароли не совпадают!");
             }
             User user = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == email);
             if (user != null)
             {
-                return (false, "Пользователь с такой почтой уже зарегестрирован!!!");
+                return (false, "Пользователь с такой почтой уже зарегестрирован!");
             }
             _dbContext.Users.Add(new User() { Name = name, Email = email, Password = password });
             await _dbContext.SaveChangesAsync();
