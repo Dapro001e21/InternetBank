@@ -5,31 +5,28 @@
 @inject CardsService cardService
 @inject NavigationManager navManager
 
-<PageTitle>Аккаунт</PageTitle>
+<div class="account">
+	<PageTitle>Аккаунт</PageTitle>
 
-<AuthorizeView>
-    <Authorized>
-        <h1>Здраствуйте, @Name</h1>
-		<button @onclick="async () => await CardCreate()">Выпустить новую карту</button>
-		<h2>Ваши карты:</h2>
-		@{
-			if(allCards.Count > 0)
-			{
-				foreach (var e in allCards)
-				{
-					<div @onclick="@(() => LoadCardPage(@e.Id))" style="border-radius: 10px; height: 100px; width: 200px; background-color: lightblue; margin: 5px; padding:10px">
-						<h5>Id:@e.Id</h5>
-						<div style="font-size: large; text-align: center">@e.Money rub.</div>
-					</div>
+	<AuthorizeView>
+		<Authorized>
+			<h1>Здраствуйте, @Name</h1>
+			<button @onclick="async () => await CardCreate()">Выпустить новую карту</button>
+			<h2>Ваши карты:</h2>
+			<div class="card-container">
+				@{
+					foreach (var e in allCards)
+					{
+						<div class="card" @onclick="@(() => LoadCardPage(@e.Id))">
+							<h4>Номер карты: @e.Id</h4>
+							<div class="money">@e.Money руб.</div>
+						</div>
+					}
 				}
-			}
-			else
-			{
-				<h3>Загрузка...</h3>
-			}
-		}
-    </Authorized>
-</AuthorizeView>
+			</div>
+		</Authorized>
+	</AuthorizeView>
+</div>
 
 @code {
 	[CascadingParameter] Task<AuthenticationState> auth { get; set; }

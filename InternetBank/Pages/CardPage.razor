@@ -35,7 +35,7 @@
 						<span>Введите почту:</span>
 						<InputText @bind-Value="DataModel.ReceiverEmail" />
 						<button type="button" @onclick="GetCardsReceiver">Показать карты</button>
-						<ValidationMessage style="margin-bottom: 10px" For="@(() => DataModel.ReceiverEmail)" />
+						<ValidationMessage For="@(() => DataModel.ReceiverEmail)" />
 					</div>
 					<div class="form-block">
 						@{
@@ -47,7 +47,7 @@
 										<option value="@card.Id">Id: @card.Id</option>
 									}
 								</InputSelect>
-								<ValidationMessage style="margin-bottom: 10px" For="@(() => DataModel.RecieverIdCard)" />
+								<ValidationMessage For="@(() => DataModel.RecieverIdCard)" />
 							}
 						}
 					</div>
@@ -76,18 +76,22 @@
 			}
 		}
 	</div>
-	<div style="padding:20px;min-width:fit-content">
+	<div class="transictions">
 		<h4>Transaction history</h4>
 		@foreach (var trans in transactions)
 		{
-			if (trans.RecieverIdCard == CardId)
-			{
-				<div class="block"><span>@trans.TransactionTime</span><span style="margin-left:20px;color:lawngreen">    + @trans.Money</span></div>
-			}
-			else
-			{
-				<div class="block"><span>@trans.TransactionTime</span><span style="margin-left:20px;color:red">    - @trans.Money</span></div>
-			}
+			<div class="block">
+				<span>@trans.TransactionTime</span>
+				@if(trans.RecieverIdCard == CardId)
+				{
+					<span class="content-block reciever">+ @trans.Money руб.</span>
+				}
+				else
+				{
+					<span class="content-block sender">- @trans.Money руб.</span>
+				}
+				<span class="content-block">@trans.Name</span>
+			</div>
 		}
 	</div>
 </div>
@@ -112,6 +116,7 @@
 		{
 			isEmail = value;
 			DataModel = new();
+			ErrorMessage = "";
 		}
 	}
 
@@ -137,12 +142,17 @@
 		{
 			navManager.NavigateTo("/Account", true);
 		}
-		thisCard = await cardService.GetCard(Id);
-		transactions = await tranService.GetTransactionHistory(Id);
+		thisCard = await cardService.GetCard(CardId);
+		transactions = await tranService.GetTransactionHistory(CardId);
 	}
 
 	private async Task SendMoney()
 	{
+		if (thisCard.Money < transaction.Money)
+		{
+			ErrorMessage = "Не достаточно средств!";
+			return;
+		}
 		if (transaction.Money > 0)
 		{
 			transaction.SenderIdCard = CardId;
@@ -151,15 +161,24 @@
 			var result = await tranService.AddMoneyTransaction(transaction);
 			if (result.Success)
 			{
-				transactions = await tranService.GetTransactionHistory(Id);
+				transactions = await tranService.GetTransactionHistory(CardId);
 				transaction = new();
 			}
 			ErrorMessage = result.Message;
-		}		
+		}
 	}
 
 	private async Task GetCardsReceiver()
 	{
-		DataModel.ReceiverCards = await cardService.GetCards(DataModel.ReceiverEmail);
+		var result = await cardService.GetCards(DataModel.ReceiverEmail);
+		if(result.Count == 0)
+		{
+			ErrorMessage = "Пользователь не найден!";
+		}
+		else
+		{
+			DataModel.ReceiverCards = result;
+			ErrorMessage = "";
+		}
 	}
 }

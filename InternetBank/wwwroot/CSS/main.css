@@ -82,15 +82,47 @@ main{
     padding: 50px;
 }
 
-.cardPage .content .formblock {
+.cardPage .content .form-block {
     margin: 10px 0;
 }
 
 .cardPage .transictions {
     padding: 20px;
-    min-width: fit-content;
+    height: 50vh;
+    overflow: auto;
 }
 
 .cardPage .transictions .block {
     margin:10px;
+}
+
+.cardPage .transictions .block .content-block {
+    margin-left: 20px;
+}
+
+.cardPage .transictions .block .reciever {
+    color: lawngreen;
+}
+
+.cardPage .transictions .block .sender {
+    color:red;
+}
+
+.account .card {
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    background-color: lightblue;
+    margin: 5px;
+    padding: 10px;
+}
+
+.account .card .money {
+    font-size: 20px; 
+    text-align: center;
+}
+
+.account .card-container {
+    display: flex;
+    flex-wrap: wrap;
 }

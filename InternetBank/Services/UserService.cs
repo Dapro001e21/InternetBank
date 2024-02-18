@@ -28,7 +28,7 @@ namespace InternetBank.Services
                 return (false, "Ошибка смены пароля!");
             }
         }
-        public async Task<(bool Success, string Message)> EmailIsExist(string email)
+        public async Task<(bool Success, string Message)> EmailIsExistAsync(string email)
         {
             User user = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == email);
             if (user != null)
@@ -36,6 +36,13 @@ namespace InternetBank.Services
                 return (true, "");
             }
             return (false, "Пользователя с такой почтой не существует!");
+        }
+
+        public async Task<User> GetUserAsync(int cardId)
+        {
+            Card card = await _dbContext.Cards.SingleOrDefaultAsync(card => card.Id == cardId);
+            User user = await _dbContext.Users.SingleOrDefaultAsync(user => user.Id == card.OwnerId);
+			return user;
         }
     }
 }

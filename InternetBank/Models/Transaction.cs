@@ -1,4 +1,6 @@
-﻿namespace InternetBank.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace InternetBank.Models
 {
 	public class Transaction
 	{
@@ -7,5 +9,7 @@
 		public int RecieverIdCard { get; set; }
 		public DateTime TransactionTime { get; set; }
 		public decimal Money { get; set; }
+		[NotMapped]
+		public string Name { get; set; } = "";
 	}
 }

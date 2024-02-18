@@ -25,7 +25,7 @@ namespace InternetBank.Areas.Identity.Pages.Account
         public async Task OnPostSendCode(string email)
         {
             OnLoadData();
-            var result = await _userService.EmailIsExist(email);
+            var result = await _userService.EmailIsExistAsync(email);
             if (result.Success)
             {
                 _codeGeneratingService.Email = email;
