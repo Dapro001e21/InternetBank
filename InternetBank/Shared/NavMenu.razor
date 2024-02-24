@@ -1,10 +1,7 @@
-﻿<AuthorizeView>
-    <Authorized>
-        <a href="/Account">Привет, @context.User.Identity?.Name!</a>
-        <a href="/Logout">Выйти</a>
-    </Authorized>
-    <NotAuthorized>
-        <a href="/Registration">Зарегистрироваться</a>
-        <a href="/Login">Войти</a>
-    </NotAuthorized>
-</AuthorizeView>
+﻿<div class="left">
+    <h1>InternetBank</h1>
+    <a href="/Account">Карты</a>
+</div>
+<div class="right">
+    <a href="/Logout">Выйти</a>
+</div>

@@ -34,17 +34,17 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-n8qsp3wuiu
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-qq6wwtiej9
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Account/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
@@ -60,10 +60,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Account/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Account/ResetPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/Visual Studio Projects/ASP.NET/InternetBank/InternetBank/Areas/Identity/Pages/Shared/_Layout.cshtml]

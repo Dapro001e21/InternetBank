@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InternetBank")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+005f2a81d2d54b7e13c6b09df4accf159a136412")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdd4be387b6386fba16f653a77aca1a08153f1cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("InternetBank")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InternetBank")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

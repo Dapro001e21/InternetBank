@@ -1,80 +1,4 @@
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\appsettings.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\InternetBank.staticwebassets.runtime.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\InternetBank.exe
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\InternetBank.deps.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\InternetBank.runtimeconfig.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\InternetBank.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\InternetBank.pdb
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Azure.Core.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Azure.Identity.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\MailKit.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\MimeKit.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Memory.Data.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Runtime.Caching.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Security.Permissions.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\System.Windows.Extensions.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.csproj.AssemblyReference.cache
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.AssemblyInfoInputs.cache
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.AssemblyInfo.cs
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.csproj.CoreCompileInputs.cache
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.RazorAssemblyInfo.cache
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.RazorAssemblyInfo.cs
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.sourcelink.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets\msbuild.InternetBank.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets\msbuild.build.InternetBank.props
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.InternetBank.props
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.InternetBank.props
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\bundle\InternetBank.styles.css
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\projectbundle\InternetBank.bundle.scp.css
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.csproj.CopyComplete
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\refint\InternetBank.dll
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.pdb
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.genruntimeconfig.cache
-C:\Users\larik\source\repos\IntBank2\InternetBank\InternetBank\obj\Debug\net7.0\ref\InternetBank.dll
+D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\System.Windows.Extensions.dll
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\appsettings.Development.json
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\appsettings.json
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\InternetBank.staticwebassets.runtime.json
@@ -112,7 +36,6 @@ D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\n
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\System.Security.Permissions.dll
-D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\System.Windows.Extensions.dll
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -142,10 +65,7 @@ D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\n
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.InternetBank.props
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.InternetBank.props
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\staticwebassets.pack.json
-D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\bundle\InternetBank.styles.css
-D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\scopedcss\projectbundle\InternetBank.bundle.scp.css
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.csproj.CopyComplete
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\InternetBank.dll
 D:\Projects\Visual Studio Projects\ASP.NET\InternetBank\InternetBank\obj\Debug\net7.0\refint\InternetBank.dll

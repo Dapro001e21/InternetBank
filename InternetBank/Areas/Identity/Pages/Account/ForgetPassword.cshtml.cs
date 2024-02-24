@@ -35,7 +35,7 @@ namespace InternetBank.Areas.Identity.Pages.Account
             ErrorMessage = result.Message;
             OnSaveData();
         }
-        public async Task OnPostCodeCompare(string code)
+        public void OnPostCodeCompare(string code)
         {
             OnLoadData();
             if (code == _codeGeneratingService.Code)

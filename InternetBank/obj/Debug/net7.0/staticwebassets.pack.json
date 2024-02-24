@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css",
-      "PackagePath": "staticwebassets\\InternetBank.bundle.scp.css"
-    },
-    {
       "Id": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\wwwroot\\CSS\\main.css",
       "PackagePath": "staticwebassets\\CSS\\main.css"
     },

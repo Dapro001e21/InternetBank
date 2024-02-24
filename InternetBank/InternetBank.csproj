@@ -12,7 +12,6 @@
     <None Include="Areas\Identity\Pages\Account\Registration.cshtml" />
     <None Include="Areas\Identity\Pages\Shared\_Layout.cshtml" />
     <None Include="Areas\Identity\Pages\_ViewImports.cshtml" />
-    <None Include="Areas\Identity\Pages\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u2ufhILJit/oYvDJy9uDxMHo5uf8377f0gwCPNc1p+g=",
+  "Hash": "Qn4KXkCgu7F8yVOk/PrnYFfwZoSyWNgfSYMDvwYvhCM=",
   "Source": "InternetBank",
   "BasePath": "_content/InternetBank",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InternetBank.styles.css",
-      "SourceId": "InternetBank",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/InternetBank",
-      "RelativePath": "InternetBank.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InternetBank.styles.css"
-    },
-    {
-      "Identity": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css",
-      "SourceId": "InternetBank",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/InternetBank",
-      "RelativePath": "InternetBank.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InternetBank.bundle.scp.css"
-    },
     {
       "Identity": "D:\\Projects\\Visual Studio Projects\\ASP.NET\\InternetBank\\InternetBank\\wwwroot\\CSS\\main.css",
       "SourceId": "InternetBank",
