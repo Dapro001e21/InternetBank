@@ -62,6 +62,7 @@ namespace InternetBank.Areas.Identity.Pages.Account
                 ErrorMessage = result.Message;
                 return Page();
             }
+            OnClearData();
             return Redirect("/Login");
         }
 
@@ -78,5 +79,9 @@ namespace InternetBank.Areas.Identity.Pages.Account
             }
         }
 
+        private void OnClearData()
+        {
+            HttpContext.Session.Clear();
+        }
     }
 }

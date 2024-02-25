@@ -77,20 +77,20 @@
 		}
 	</div>
 	<div class="transictions">
-		<h4>Transaction history</h4>
+		<h4>История транзакций</h4>
 		@foreach (var trans in transactions)
 		{
 			<div class="block">
-				<span>@trans.TransactionTime</span>
+				<span class="datetime">@trans.TransactionTime</span>
 				@if(trans.RecieverIdCard == CardId)
 				{
-					<span class="content-block reciever">+ @trans.Money руб.</span>
+					<span class="money reciever">+ @trans.Money руб.</span>
 				}
 				else
 				{
-					<span class="content-block sender">- @trans.Money руб.</span>
+					<span class="money sender">- @trans.Money руб.</span>
 				}
-				<span class="content-block">@trans.Name</span>
+				<span class="name">@trans.Name</span>
 			</div>
 		}
 	</div>
