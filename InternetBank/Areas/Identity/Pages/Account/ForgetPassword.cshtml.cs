@@ -30,7 +30,7 @@ namespace InternetBank.Areas.Identity.Pages.Account
             {
                 _codeGeneratingService.Email = email;
                 _codeGeneratingService.CodeGenerate();
-                await _emailService.SendEmailAsync(email, "Код для смены пароля", _codeGeneratingService.Code);
+                await _emailService.SendEmailAsync(email, "Код для смены пароля", _codeGeneratingService.Code, "InternetBank");
             }
             ErrorMessage = result.Message;
             OnSaveData();
